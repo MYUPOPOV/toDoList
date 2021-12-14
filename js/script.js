@@ -59,12 +59,8 @@ todoControl.addEventListener("submit", function (event) {
 	}
 });
 
+/* Проверяем localStorage */
 if (JSON.parse(localStorage.getItem("toDoList"))) {
 	toDoData = JSON.parse(localStorage.getItem("toDoList"));
 	render();
 }
-
-// headerInput.addEventListener("focus", function () {
-// 	todoList.innerHTML = "";
-// 	todoCompleted.innerHTML = "";
-// });
